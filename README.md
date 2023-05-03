@@ -3,7 +3,7 @@
 
 <h1 align="center">A ChatGPT App for all platforms</h1>
 
-English / [简体中文](./docs/README-zh-CN.md) / [繁體中文](./docs/README-zh-TW.md) / [Deutsch](./docs/README-de-DE.md) / [Français](./docs/README-fr-FR.md) / [Italiano](./docs/README-it-IT.md) / [한국어](./docs/README-kr-KR.md)
+<!-- English / [简体中文](./docs/README-zh-CN.md) / [繁體中文](./docs/README-zh-TW.md) / [Deutsch](./docs/README-de-DE.md) / [Français](./docs/README-fr-FR.md) / [Italiano](./docs/README-it-IT.md) / [한국어](./docs/README-kr-KR.md) -->
 
 Built with <b>Rust</b> + <b>Tauri</b> + <b>Vue</b> + <b>Axum</b>
 
@@ -54,7 +54,7 @@ Timeout of OpenAI api request
 
 # Run Android / iOS
 
-Comming soom
+Coming soom
 
 # Thanks
 - The initial frontend code was copied from [Chanzhaoyu/chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)

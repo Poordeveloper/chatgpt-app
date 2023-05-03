@@ -55,3 +55,10 @@ pub fn set(key: String, value: String) {
 pub fn get(key: String) -> String {
     std::env::var(key).unwrap_or_default()
 }
+
+#[command]
+pub async fn fetch(url: String) -> std::result::Result<String, String> {
+    Ok(shared::network::fetch(&url)
+        .await
+        .map_err(|x| x.to_string())?)
+}

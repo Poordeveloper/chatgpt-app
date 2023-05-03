@@ -34,4 +34,8 @@ export async function loadEnvFromLocalStorage() {
     await invoke('set', { key, value: env[key] })
 }
 
+export async function fetch(url: string): Promise<string> {
+  return invoke('fetch', { url })
+}
+
 export default call

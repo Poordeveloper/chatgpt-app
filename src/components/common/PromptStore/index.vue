@@ -9,6 +9,7 @@ import { usePromptStore } from '@/store'
 import { useBasicLayout } from '@/hooks/useBasicLayout'
 import { t } from '@/locales'
 import { getLanguage } from '@/hooks/useLanguage'
+import { isTauri, fetch as tauri_fetch } from '@/tauri'
 
 interface DataProps {
   renderKey: string
@@ -221,8 +222,14 @@ const exportPromptTemplate = () => {
 const downloadPromptTemplate = async () => {
   try {
     importLoading.value = true
-    const response = await fetch(downloadURL.value)
-    const data = await response.text()
+    let data
+    if (isTauri) {
+      data = await tauri_fetch(downloadURL.value)
+    }
+    else {
+      const response = await fetch(downloadURL.value)
+      data = await response.text()
+    }
     try {
       const jsonData = JSON.parse(data)
       if ('key' in jsonData[0] && 'value' in jsonData[0])

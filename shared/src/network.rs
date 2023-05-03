@@ -69,6 +69,16 @@ fn get_auth(url: &str) -> Option<(String, String)> {
     None
 }
 
+pub async fn fetch(url: &str) -> crate::Result<String> {
+    Ok(build_proxy_client()
+        .unwrap_or(reqwest::Client::new())
+        .get(url)
+        .send()
+        .await?
+        .text()
+        .await?)
+}
+
 mod test {
     #[test]
     fn test_proxy() {

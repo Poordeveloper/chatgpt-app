@@ -208,18 +208,13 @@ pub async fn fetch_usage(rng: DateRange) -> Result<String> {
         "${url}/dashboard/billing/usage?start_date=${}&end_date=${}",
         rng.start_date, rng.end_date
     );
-    let client = if let Some(c) = build_proxy_client() {
-        c
-    } else {
-        reqwest::Client::new()
-    };
+    let client = build_proxy_client().unwrap_or(reqwest::Client::new());
     let res = client
         .get(url_usage)
         .header("Authorization", format!("Bearer ${key}"))
         .header("Content-Type", "application/json")
         .send()
         .await?;
-    res.status();
     Ok(res.text().await?)
 }
 
