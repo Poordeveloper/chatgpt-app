@@ -1,0 +1,7 @@
+[workspace]
+members = ["src-tauri", "shared", "server"]
+
+[profile.release]
+strip = true
+lto = true
+opt-level = "s"
