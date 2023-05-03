@@ -7,6 +7,8 @@
 
 Built with <b>Rust</b> + <b>Tauri</b> + <b>Vue</b> + <b>Axum</b>
 
+ ![play](https://user-images.githubusercontent.com/1399893/236070870-40443458-687b-4532-abc9-5b2265a298d7.gif)
+  
 ![cover](./docs/images/screenshot.png)
 
 </div>
