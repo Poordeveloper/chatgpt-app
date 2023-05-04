@@ -1,9 +1,9 @@
 [package]
-name = "app"
+name = "chatgpt"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
+description = "A ChatGPT App for all platforms"
+authors = ["Poordeveloper"]
+license = "AGPL"
 repository = ""
 edition = "2021"
 rust-version = "1.64"

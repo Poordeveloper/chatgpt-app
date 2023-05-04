@@ -17,6 +17,7 @@ Built with <b>Rust</b> + <b>Tauri</b> + <b>Vue</b> + <b>Axum</b>
 - [nodejs](https://nodejs.org/)
 - [pnpm](https://pnpm.io/)
 - [rust](https://rustup.rs/)
+- [Android / iOS sdk](https://next--tauri.netlify.app/next/guides/getting-started/prerequisites/)
 
 # Run Desktop
 
@@ -56,7 +57,9 @@ Timeout of OpenAI api request
 
 # Run Android / iOS
 
-Coming soom
+```
+pnpm tauri ios dev
+```
 
 # Thanks
 - The initial frontend code was copied from [Chanzhaoyu/chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)

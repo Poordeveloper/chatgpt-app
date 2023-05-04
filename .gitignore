@@ -32,3 +32,4 @@ dist-ssr
 *.sw?
 nohup.out
 .env
+.cargo

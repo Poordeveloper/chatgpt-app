@@ -43,13 +43,11 @@ export default defineConfig(async (env) => {
       host: '0.0.0.0', // listen on all addresses
       port: 1420,
       strictPort: true,
-      /*
       hmr: {
         protocol: 'ws',
         host,
         port: 5183,
       },
-      */
       proxy: {
         '/api': {
           target: 'http://localhost:8080/',
