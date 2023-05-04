@@ -61,7 +61,7 @@ Timeout of OpenAI api request
 pnpm tauri ios dev
 ```
 
-![ios](https://user-images.githubusercontent.com/1399893/236109971-ba359266-8ad1-4a46-bb79-cd42a94db1cf.png)
+![ios](https://user-images.githubusercontent.com/1399893/236110775-2cea0ff9-f72f-456c-a5f8-56bf2ce85627.png)
 
 
 # Thanks
