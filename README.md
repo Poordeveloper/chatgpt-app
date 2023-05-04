@@ -61,6 +61,9 @@ Timeout of OpenAI api request
 pnpm tauri ios dev
 ```
 
+![ios](https://user-images.githubusercontent.com/1399893/236109971-ba359266-8ad1-4a46-bb79-cd42a94db1cf.png)
+
+
 # Thanks
 - The initial frontend code was copied from [Chanzhaoyu/chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)
 - Inspired by [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) and [lencx/ChatGPT](https://github.com/lencx/ChatGPT)
