@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 import { computed, onMounted, ref } from 'vue'
-import { NButton, NInput, NSpin, useMessage } from 'naive-ui'
+import { NButton, NInput, NInputNumber, NSpin, useMessage } from 'naive-ui'
 import { fetchChatConfig } from '@/api'
 import pkg from '@/../package.json'
 import { useAuthStore } from '@/store'
@@ -9,7 +9,7 @@ import { t } from '@/locales'
 
 interface ConfigState {
   apiKey?: string
-  timeoutMs?: number
+  timeoutMs?: number 
   reverseProxy?: string
   proxy?: string
   usage?: string
@@ -92,7 +92,7 @@ function update(key: string, value: string) {
       <div class="flex items-center space-x-4">
         <span class="flex-shrink-0 w-[120px]">{{ $t('setting.timeout') }} </span>
         <div class="flex-1">
-          <NInput v-model:value="config.timeoutMs" type="digit" placeholder="In milliseconds" />
+          <NInputNumber v-model:value="config.timeoutMs" placeholder="In milliseconds" />
         </div>
         <NButton size="tiny" text type="primary" @click="update('TIMEOUT_MS', String(config.timeoutMs || 0))">
           {{ $t('common.save') }}

@@ -15,7 +15,7 @@ futures = "0.3"
 uuid = { version = "1.3", features = ["v4"] }
 tiktoken-rs = { version = "0.4", features = ["async-openai"] }
 once_cell = "1.17"
-reqwest = { version = "0.11", features = ["socks"] }
+reqwest = { version = "0.11", default-features = false,  features = ["json", "rustls-tls", "socks"] }
 rust-ini = "0.18"
 env_logger = "0.10"
 tokio = "1.28"

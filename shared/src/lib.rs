@@ -8,6 +8,7 @@ pub mod network;
 pub use tokio;
 pub use once_cell;
 pub use uuid;
+pub use reqwest;
 
 pub type Result<F, E = anyhow::Error> = anyhow::Result<F, E>;
 
