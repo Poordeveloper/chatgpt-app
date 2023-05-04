@@ -11,7 +11,12 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+        "clipboard": {
+            "all": true
+        },
+        "http": {
+            "request": true
+        }
     },
     "bundle": {
       "active": true,
@@ -47,7 +52,7 @@
       }
     },
     "security": {
-      "csp": null
+      "csp": "default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'"
     },
     "updater": {
       "active": false
